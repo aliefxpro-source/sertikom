@@ -1,3 +1,24 @@
+ const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+    const position = window.scrollY > 0;
+    navbar.classList.toggle("scrolling-active", position);
+});
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+const allContainers = document.querySelectorAll('.container');
+allContainers.forEach(container => observer.observe(container));
+ 
  document.getElementById("form").addEventListener("submit", function(e) {
       e.preventDefault();
 
@@ -17,3 +38,7 @@
 
       alert("Pesan berhasil dikirim! Terima kasih telah menghubungi VisiDigital.");
     });
+
+   
+
+
