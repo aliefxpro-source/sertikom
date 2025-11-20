@@ -1,50 +1,47 @@
+    
    body {
       margin: 0;
       font-family: poppins, Arial, sans-serif;
       color: #000000;
       background-size: cover;
-      padding-top: 70%x;
+      gap: 4px ;
+      background-color: #1B1F3B;
     }
+
+    .container {
+    opacity: 0.9;
+    transform: translate(30px);
+    transition: all 0.6s ease-out;
+}
+
+.container.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.scrolling-active{
+    background-color: blue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.6s ease;
+    color: black;
+}
  
     .limosin{
-        color: black;
+        color: #7B2CFF;
     }
 
    
     .limosin3{
-        color: black;
+        color: #7B2CFF;
     }
 
-    .ayam{
-        color: #F6F3ED;
-    }
-
-    .ikan{
-        color: #F6F3ED;
-    }
-
-    .sapi{
-        color: #F6F3ED;
-    }
-
-    .kadal{
-        color: #F6F3ED;
-    }
-
-    .hiu{
-        color: #F6F3ED;
-    }
-
-    .paus{
-        color: #F6F3ED;
-    }
-
+    
     .naga{
-        color: black;
+        color: #7B2CFF;
     }
 
     .dragon{
-        color: black;
+        color: #9D4EDD;
     }
 
     .div{
@@ -52,8 +49,17 @@
     }
 
    .zonda{
-    color: black;
+    color: #7B2CFF;
    }
+
+   .card-title{
+    color:#7B2CFF;
+   }
+
+   .nav-item{
+    color:#1a1f27;
+   }
+
 
    .nav{
     position: fixed;
@@ -61,7 +67,69 @@
     width: 100%;
     z-index: 999;
    }
-   
+
+   .card-text{
+    size: 230px;
+    color: #9D4EDD;
+   }
+
+   .card-text1{
+    size: 230px;
+    color: #7B2CFF;
+   }
+
+   .card-structure{
+     background: #1B1F3B;
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid #2a2f35;
+      transition: 0.3s;
+   }
+
+   .card-img-overlay{
+     background: #1B1F3B;
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid #2a2f35;
+      transition: 0.3s;
+   }
+
+   #navbar{
+    color: #2a2f35;
+   }
+
+   .navbar i:hover{
+    cursor: pointer;
+   }
+ #about23 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;         /* biar responsif di HP *          /* jarak gambar & teks */
+  padding: 60px 0;
+}
+
+.cardkami {
+  width: 280px;            /* ukuran gambar pas */
+  max-width: 100%;         /* biar ga overflow */
+  border-radius: 20px;
+}
+
+.card-lawson {
+  max-width: 400px;        /* bikin teks ga melebar */
+  text-align: center;      /* center konten teks */
+}
+
+
+   .services-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px;
+  justify-items: center;   /* CARD ketengah */
+  width: 100%;
+}
+
+  
    
 .logos img {
   width: 140px;
@@ -71,19 +139,21 @@
   object-fit: contain;
 }
 
-.scrolling-active{
-    background-color: #2e343a;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: 0.6s ease;
-    color: #7b2cff;
+.services-wrapper img{
+    height: 250px;   
+    transition: 0.3s ease;
+
 }
 
+.services-wrapper img:hover{
+    scale: 1.04;
+}
 
 
     /* Hero */
     header {
-      background: linear-gradient(135deg, #F6F3ED, #F6F3ED);
-      color: white;
+      background: linear-gradient(135deg, #1B1F3B, #1B1F3B);
+      color: #1B1F3B;
       padding: 120px 20px;
       text-align: center;
       border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -96,7 +166,7 @@
       border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
-      color:#F6F3ED;
+      color:#1B1F3B;
       transition: 0.3s;
     }
     header a:hover { transform: scale(1.07); }
@@ -110,13 +180,13 @@
       display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; 
     }
     .service-item {
-      background: black;
+      background: #7B2CFF;
       padding: 25px;
       border-radius: 14px;
-      border: 1px solid #2a2f35;
+      border: 1px solid #1B1F3B;
       transition: 0.3s;
     }
-    .service-item:hover { border-color: #0a84ff; transform: translateY(-5px); }
+    .service-item:hover { border-color: #1B1F3B; transform: translateY(-5px); }
 
     /* Portfolio */
     .logos { display: flex; justify-content: center; flex-wrap: wrap; gap: 25px; }
@@ -124,7 +194,7 @@
       width: 140px; height: 70px; background:#1a1f27;
       display:flex; align-items:center; justify-content:center;
       border-radius:10px; font-weight:bold; color:#8b8b8b;
-      border:1px solid #2e343a;
+      border:1px solid #1B1F3B;
       transition:0.3s;
     }
     .logos div:hover { border-color:#7b2cff; color:#0a84ff; }
@@ -134,16 +204,16 @@
     input, textarea {
       padding: 14px;
       border-radius: 10px;
-      border: 1px solid black;
-      background:black;
-      color:white;
+      border: 1px solid #1B1F3B;
+      background:#7B2CFF;
+      color:#1B1F3B;
       font-size: 16px;
     }
 
     button {
       padding: 14px;
-      background: linear-gradient(135deg, #0000, #333333);
-      color: black;
+      background: linear-gradient(135deg, #1B1F3B, #7B2CFF, #1B1F3B);
+      color: #1B1F3B;
       border: none;
       border-radius: 10px;
       font-size: 18px;

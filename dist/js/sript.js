@@ -18,6 +18,8 @@ const observer = new IntersectionObserver((entries) => {
 
 const allContainers = document.querySelectorAll('.container');
 allContainers.forEach(container => observer.observe(container));
+
+
  
  document.getElementById("form").addEventListener("submit", function(e) {
       e.preventDefault();
